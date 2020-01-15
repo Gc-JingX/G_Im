@@ -1,0 +1,101 @@
+def supportVersion = "28.0.0"
+def butterKnifeVersion = "8.5.1"
+def routerVersion = "0.2.3"
+
+def multidex = "2.0.0"
+def constraintlayout = "1.1.2"
+def annotation = "1.0.0-beta01"
+def immersionbar = "2.3.3-beta15"
+def butterknife = "10.1.0"
+def eventbus = "3.1.1"
+def smartRefreshLayout = "1.1.0"
+project.ext {
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0.1"
+    ]
+
+    dependencies = [
+
+            "multidex"                     : "androidx.multidex:multidex:+",
+            "constraintlayout"             : "androidx.constraintlayout:constraintlayout:+",
+
+            "annotation"                   : "androidx.annotation:annotation:+",
+            "fragment"                     : "androidx.fragment:fragment:+",
+            "lifecycle"                    : "androidx.lifecycle:lifecycle-extensions:+",
+            "appcompat"                    : "androidx.appcompat:appcompat:+",
+            "legacy"                       : "androidx.legacy:legacy-support-v13:+",
+            "material"                     : "com.google.android.material:material:+",
+            "dynamicanimation"             : "androidx.dynamicanimation:dynamicanimation:+",
+
+            /**
+             *
+             * 沉浸状态栏
+             * */
+            "immersionbar"                 : "com.gyf.immersionbar:immersionbar:${immersionbar}",
+
+            /**
+             * 注解
+             */
+            "butterknife"                  : "com.jakewharton:butterknife:${butterknife}",
+            "butterknife_compiler"         : "com.jakewharton:butterknife-compiler:${butterknife}",
+
+
+            "eventbus"                     : "org.greenrobot:eventbus:${eventbus}",
+
+            /**
+             * 上下拉刷新
+             */
+
+            "smartRefreshLayout"           : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshLayout}",
+
+            "smartRefreshHeader"           : "com.scwang.smartrefresh:SmartRefreshHeader:${smartRefreshLayout}",
+
+            "BaseRecyclerViewAdapterHelper": "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46",
+
+            /**
+             * 数据库
+             */
+            "greendao"                     : "org.greenrobot:greendao:3.2.2",
+            "sqlcipher"                    : "net.zetetic:android-database-sqlcipher:4.0.1@aar",
+
+            //Retrofit
+            "retrofit"                     : "com.squareup.retrofit2:retrofit:2.5.0",
+            "converter-gson"               : "com.squareup.retrofit2:converter-gson:2.5.0",
+            "adapter-rxjava2"              : "com.squareup.retrofit2:adapter-rxjava2:2.5.0",
+
+            "logging"                      : "com.squareup.okhttp3:logging-interceptor:3.4.1",
+
+            /*rx-android-java*/
+            "rxlifecycle"                  : "com.trello.rxlifecycle3:rxlifecycle:3.0.0",
+            "rxlifecycle-components"       : "com.trello.rxlifecycle3:rxlifecycle-components:3.0.0",
+
+
+            "qmui"                         : "com.qmuiteam:qmui:1.4.0",
+
+            "toast"                        : "com.hjq:toast:3.0",
+            /**
+             *  图片框架
+             */
+            "glide"                        : "com.github.bumptech.glide:glide:4.9.0",
+            "glide-compiler"               : "com.github.bumptech.glide:compiler:4.9.0",
+
+            //router
+            // 替换成最新版本, 需要注意的是api
+            // 要与compiler匹配使用，均使用最新版可以保证兼容
+            "router"                       : "com.alibaba:arouter-api:1.4.1",
+            "router-compiler"              : "com.alibaba:arouter-compiler:1.2.2",
+
+            "autosize"                     : "me.jessyan:autosize:1.0.6",
+            "rxpermissions"                : "com.github.tbruyelle:rxpermissions:0.10.2",
+
+            "butterknife"                  : "com.jakewharton:butterknife:10.1.0",
+            "butterknife-compiler"         : "com.jakewharton:butterknife-compiler:10.1.0",
+            "bga_banner"                   : 'cn.bingoogolapple:bga-banner:2.2.5',
+            "fastjson"                         : 'com.alibaba:fastjson:1.1.71.android'
+
+    ]
+}

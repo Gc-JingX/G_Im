@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--弹窗 大客户 有确定按钮-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/qb_px_220"
+        android:layout_height="@dimen/qb_px_220"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/daofu_dialog_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <!--说话动画效果-->
+        <ImageView
+            android:id="@+id/img_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/qb_px_40"
+            android:background="@drawable/recorder_player2" />
+        <!--控制-->
+        <TextView
+            android:id="@+id/tv_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_change"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/qb_px_10"
+            android:text="重置"
+            android:textColor="#299FFB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_37"
+            android:layout_alignParentBottom="true"
+            android:background="@color/top_bar_normal_bg"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/btn_white_normal"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
