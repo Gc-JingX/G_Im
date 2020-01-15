@@ -61,5 +61,5 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
     api files('libs/Msc.jar')
     api files('libs/org.apache.http.legacy.jar')
-    api 'com.github.Gc-JingX:G_value:+'
+    implementation 'com.github.Gc-JingX:G_value:+'
 }
